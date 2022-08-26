@@ -1,0 +1,93 @@
+
+.footer {
+    display: block;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #eeeeee;
+    background-color: #1b1a17;
+  }
+  .footer .contenedor {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  .footer .contenedor .categorias {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .footer .contenedor .categorias .redirecCat {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .contenedor .categorias .redirecCat .footerOp {
+    padding: 30px 30px 20px 30px;
+    color: #f0e3ca;
+    list-style: none;
+  }
+  .footer .contenedor .socials {
+    text-align: center;
+  }
+  .footer .contenedor .socials img {
+    margin-inline: 0.3rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .footer .contenedor .socials img:hover {
+    border-radius: 50%;
+    border: #f0e3ca 3px solid;
+    padding: 2px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .footer .copy {
+    margin-top: 0.5rem;
+  }
+  
+  @media screen and (max-width: 1220px) {
+    .socials img {
+      width: 32px;
+    }
+    .footer .contenedor {
+      display: block;
+      justify-content: center;
+    }
+    .footer .contenedor .logoFooter {
+      display: flex;
+      justify-content: center;
+    }
+    .footer .contenedor .socials {
+      padding-top: 2rem;
+      display: block;
+      justify-content: center;
+    }
+    .footer .contenedor .socials img {
+      width: 1.5rem;
+    }
+    .footer .contenedor .categorias {
+      display: block;
+      justify-content: center;
+    }
+    .footer .contenedor .categorias h3 {
+      display: flex;
+      justify-content: center;
+      font-size: medium;
+      margin-top: 20px;
+    }
+    .footer .contenedor .categorias .redirecCat {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      font-size: small;
+      margin-inline: -50px;
+    }
+    .footer .contenedor .categorias .redirecCat .footerOp {
+      padding: 30px 30px 20px 30px;
+      color: #fdca40;
+      list-style: none;
+    }
+    .footer .copy {
+      display: flex;
+      justify-content: center;
+    }
+  }

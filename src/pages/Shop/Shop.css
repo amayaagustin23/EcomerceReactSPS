@@ -1,0 +1,191 @@
+.bodyContainerShop {
+    margin: 2rem 1rem;
+    padding: 3rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EEEEEE; }
+    .bodyContainerShop aside {
+      display: flex;
+      justify-content: center; }
+      .bodyContainerShop aside .asideSection {
+        width: 16rem; }
+        .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search {
+          display: grid;
+          margin-bottom: 1rem; }
+          .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search input {
+            max-width: 85%;
+            padding: 0.4rem 0.25rem;
+            background: transparent;
+            color: #1B1A17;
+            font-size: 1rem;
+            border-radius: 1rem;
+            margin-right: 0.5rem;
+            margin-left: -1rem; }
+          .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search #buttonSearch {
+            background-color: transparent;
+            border: none; }
+    .bodyContainerShop .containerArticulos {
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(3, 1fr); }
+      .bodyContainerShop .containerArticulos .articulo {
+        height: 22rem;
+        width: 17rem;
+        margin: 0.5rem;
+        padding: 0.2rem;
+        border-radius: 1rem;
+        border: 5px solid #F0E3CA;
+        background-color: white;
+        grid-column: span 1;
+        grid-row: span 1;
+        opacity: 1;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        .bodyContainerShop .containerArticulos .articulo:hover {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          opacity: 0.8; }
+      .bodyContainerShop .containerArticulos .imagen {
+        display: flex;
+        justify-content: center; }
+        .bodyContainerShop .containerArticulos .imagen img {
+          display: flex;
+          justify-content: center;
+          width: 16rem;
+          border-radius: 0.5rem; }
+        .bodyContainerShop .containerArticulos .imagen:hover {
+          text-decoration: none;
+          color: #EEEEEE !important; }
+      .bodyContainerShop .containerArticulos .textos {
+        color: #1B1A17;
+        text-decoration: none !important;
+        margin-top: 0.4rem;
+        height: 6rem;
+        padding-left: 0.2rem; }
+        .bodyContainerShop .containerArticulos .textos img {
+          position: absolute;
+          width: 3rem;
+          top: 14rem; }
+        .bodyContainerShop .containerArticulos .textos .title {
+          font-size: 18px; }
+        .bodyContainerShop .containerArticulos .textos .precioEtiqueta {
+          display: flex;
+          justify-content: space-between; }
+          .bodyContainerShop .containerArticulos .textos .precioEtiqueta p {
+            text-decoration: none !important;
+            font-size: 26px;
+            font-weight: bold; }
+          .bodyContainerShop .containerArticulos .textos .precioEtiqueta .etiqueta {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            color: #EEEEEE;
+            border-radius: 0.5rem;
+            padding: 0.4rem;
+            top: 1rem; }
+      .bodyContainerShop .containerArticulos .containerButton {
+        margin-top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+    .bodyContainerShop .page-link {
+      background-color: #1B1A17 !important;
+      color: #EEEEEE !important; }
+      .bodyContainerShop .page-link:hover {
+        background-color: #FDCA40 !important;
+        color: #1B1A17 !important; }
+  
+  @media screen and (max-width: 1220px) {
+    .noProduct {
+      margin: 2rem auto; }
+    .bodyContainerShop {
+      position: relative;
+      display: grid;
+      justify-content: center;
+      margin: 1rem; }
+      .bodyContainerShop aside {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        left: 0;
+        right: 0; }
+        .bodyContainerShop aside .asideSection {
+          width: 20rem; }
+          .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search input {
+            max-width: 100%;
+            margin-left: 0; }
+      .bodyContainerShop .containerArticulos {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto; }
+        .bodyContainerShop .containerArticulos .articulo {
+          width: 15rem;
+          height: 20.2rem; }
+          .bodyContainerShop .containerArticulos .articulo .imagen img {
+            width: 14rem; }
+          .bodyContainerShop .containerArticulos .articulo .textos {
+            font-size: small; }
+            .bodyContainerShop .containerArticulos .articulo .textos img {
+              top: 12rem; }
+          .bodyContainerShop .containerArticulos .articulo .containerButton {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .bodyContainerShop .containerArticulos .articulo .containerButton .buttonArticulo,
+            .bodyContainerShop .containerArticulos .articulo .containerButton .view {
+              font-size: 14px; } }
+  
+  @media screen and (max-width: 572px) {
+    .bodyContainerShop aside .asideSection {
+      width: 15rem; }
+      .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search {
+        display: grid;
+        grid-template-columns: 9fr 1fr; }
+        .bodyContainerShop aside .asideSection .accordion .accordion-item .accordion-collapse .search input {
+          max-width: 70%; }
+    .bodyContainerShop .containerArticulos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: auto; }
+      .bodyContainerShop .containerArticulos .articulo {
+        width: 10rem;
+        height: 15.5rem;
+        margin: auto; }
+        .bodyContainerShop .containerArticulos .articulo .imagen {
+          display: flex;
+          justify-content: center; }
+          .bodyContainerShop .containerArticulos .articulo .imagen img {
+            width: 9rem; }
+        .bodyContainerShop .containerArticulos .articulo .textos {
+          height: auto; }
+          .bodyContainerShop .containerArticulos .articulo .textos img {
+            width: 2rem;
+            top: 8rem; }
+          .bodyContainerShop .containerArticulos .articulo .textos .title {
+            font-size: 18px; }
+          .bodyContainerShop .containerArticulos .articulo .textos .precioEtiqueta p {
+            text-decoration: none !important;
+            font-size: 16px;
+            font-weight: bold; }
+          .bodyContainerShop .containerArticulos .articulo .textos .precioEtiqueta .etiqueta {
+            font-size: 12px;
+            font-weight: bold;
+            color: #EEEEEE;
+            border-radius: 0.5rem;
+            padding: 0.1rem;
+            margin-right: 1rem; }
+        .bodyContainerShop .containerArticulos .articulo .containerButton {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .bodyContainerShop .containerArticulos .articulo .containerButton .buttonArticulo,
+          .bodyContainerShop .containerArticulos .articulo .containerButton .view {
+            font-size: 14px; } }
+  

@@ -11,3 +11,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+	text-decoration: none !important;
+}
+
+.modalAlert {
+	margin-top: 8rem;
+	margin-right: 2rem;
+	height: 33.2rem !important;
+	background-color: #eeeeee;
+	padding: 0 !important;
+}
+
+.bodyCart {
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eeeeee;
+	border: 2px solid #403f3d;
+	border-radius: 0.5rem;
+	margin: 0 0 0.5rem 0;
+	padding: 0.5rem;
+}
+.bodyCart h4 {
+	font-size: 20px;
+	color: #1b1a17;
+}
+.bodyCart .containerModal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.2rem 1rem;
+}
+.bodyCart .containerModal .imgCart {
+	width: 6rem;
+	border-radius: 0.5rem;
+	padding: 0.2rem;
+	margin-right: 0.2rem;
+}
+.bodyCart .containerModal .textContainer {
+	height: 5rem;
+	text-align: start;
+}
+.bodyCart .containerModal .textContainer p {
+	padding: 0;
+	margin: 0;
+}
+.bodyCart .containerModal .deleteCart {
+	margin-left: 1rem;
+	background-color: #ff8303;
+	border: none;
+	padding: 0.3rem;
+	border-radius: 0.2rem;
+}
+.bodyCart .containerModal .deleteCart:hover {
+	background-color: #1b1a17;
+}
+
+#cartcount {
+	color: #1b1a17;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fdca40;
+	position: absolute;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	font-weight: bold;
+	top: 5px;
+	left: 30px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#cartcount:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#cartcountNav {
+	display: none;
+}
+
+#flush-collapseOne {
+	border: none !important;
+}
+
+.accordion-button {
+	background: #eeeeee !important;
+	color: #1b1a17 !important;
+	border-radius: 1rem !important;
+	border: #1b1a17 1px solid !important;
+	padding: 0 1rem;
+}
+
+.accordion-button:hover {
+	background: #1b1a17 !important;
+	color: #eeeeee !important;
+	border: #1b1a17 2px solid !important;
+}
+
+.accordion-item {
+	border-radius: 1rem !important;
+	margin: 1rem 0;
+	border: none !important;
+}
+
+.accordion-item div {
+	border-radius: 1rem !important;
+	padding-left: 0.5rem;
+	border: none !important;
+}

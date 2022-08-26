@@ -1,0 +1,380 @@
+
+.talle {
+	background-color: #f0e3ca;
+	color: #1b1a17;
+	width: 100px;
+	border: none;
+	padding: 1rem !important;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2em;
+	border-radius: 1rem !important;
+	margin-inline: 10px;
+}
+.talle:hover {
+	background-color: #ff8303;
+	color: #1b1a17;
+}
+
+.activeTalle {
+	background-color: #ff8303;
+	color: #1b1a17;
+}
+
+#carrito {
+	background-color: #1b1a17;
+	color: white;
+	width: 200px;
+	border: none;
+	padding: 1rem !important;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2em;
+	border-radius: 1rem !important;
+	margin-inline: 10px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+#carrito:hover {
+	background-color: #fdca40;
+	color: #1b1a17;
+}
+#carrito:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.containerProduct {
+	margin: 2rem 1rem;
+	background-color: #eeeeee;
+	padding: 4rem;
+	border-radius: 1rem;
+}
+.containerProduct section nav .breadcrumb-item {
+	list-style: none !important;
+	text-decoration: none;
+	color: #333 !important;
+}
+.containerProduct section nav .breadcrumb-item a {
+	list-style: none !important;
+	text-decoration: none;
+	color: #333 !important;
+}
+.containerProduct section .containerSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.containerProduct section .containerSection .imagenProduct {
+	width: 30rem;
+}
+.containerProduct section .containerSection .imagenProduct figure.zoom {
+	background-position: 50% 50%;
+	position: relative;
+	border: 5px solid #f0e3ca;
+	width: 30rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	cursor: zoom-in;
+}
+.containerProduct section .containerSection .imagenProduct figure.zoom img {
+	transition: opacity 0.5s;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.containerProduct section .containerSection .imagenProduct figure.zoom img:hover {
+	opacity: 0;
+}
+.containerProduct section .containerSection .imagenProduct .imagenesAll {
+	display: flex;
+	justify-content: center;
+}
+.containerProduct section .containerSection .imagenProduct .imagenesAll .imagenesExtra {
+	width: 8rem;
+	border-radius: 0.5rem;
+	border: 2px solid #f0e3ca;
+	margin-inline: 0.5rem;
+}
+.containerProduct section .containerSection .contenedor {
+	display: grid;
+	justify-content: center;
+	margin: 2rem 0 2rem 7rem;
+}
+.containerProduct section .containerSection .contenedor h1 {
+	font-size: 40px;
+	margin-top: 1rem;
+}
+.containerProduct section .containerSection .contenedor img {
+	width: 8rem;
+}
+.containerProduct section .containerSection .contenedor .precio {
+	font-size: 4rem;
+}
+.containerProduct section .containerSection .contenedor .talles {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-size: 13px;
+	justify-content: center;
+	margin-top: 4rem;
+}
+.containerProduct section .containerSection .contenedor .talles .talle {
+	border: #ff8303 1px solid;
+	border-radius: 2rem;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.containerProduct section .containerSection .contenedor .talles .talle:hover {
+	border: #ff8303 1px solid;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.containerProduct section .containerSection .contenedor .containerAddCart {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+.containerProduct section .containerSection .contenedor .containerAddCart input {
+	border-radius: 1rem;
+	border: 1px solid #ff8303;
+	padding: 1rem;
+	width: 5rem;
+}
+.containerProduct section .containerSection .contenedor #spanNotify {
+	color: #403f3d;
+	font-size: 20px;
+	margin-left: 1rem;
+}
+.containerProduct section .accordion .accordion-item .accordion-collapse .accordion-body .listasDesc {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+.containerProduct section .accordion .accordion-item .accordion-collapse .accordion-body .listasDesc .listDesc {
+	display: grid;
+}
+.containerProduct section .accordion .accordion-item .accordion-collapse .accordion-body .listasDesc .listDesc .descOp {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+	.containerProduct section .containerSection {
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(auto-fill, 600px);
+		justify-content: center;
+		align-items: center;
+	}
+	.containerProduct section .containerSection .imagenProduct {
+		width: 32rem;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom {
+		background-position: 50% 50%;
+		position: relative;
+		border: 5px solid #f0e3ca;
+		width: 32rem;
+		border-radius: 1rem;
+		overflow: hidden;
+		cursor: zoom-in;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom img {
+		transition: opacity 0.5s;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom img:hover {
+		opacity: 0;
+	}
+	.containerProduct section .containerSection .imagenProduct .imagenesAll .imagenesExtra {
+		width: 8rem;
+		border-radius: 0.5rem;
+		border: 2px solid #f0e3ca;
+	}
+	.containerProduct section .containerSection .contenedor {
+		display: block;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .contenedor .precio {
+		font-size: 4rem;
+	}
+	.containerProduct section .containerSection .contenedor .talles {
+		display: flex;
+		justify-content: center;
+		margin: 2rem auto;
+	}
+	.containerProduct section .containerSection .contenedor .talles .talle {
+		width: 70px;
+	}
+	.containerProduct section .containerSection .contenedor .containerAddCart {
+		display: flex;
+		justify-content: center;
+	}
+	.modal .modal-content {
+		background-color: #eeeeee;
+		margin: 15% auto;
+		border: 1px solid #1b1a17;
+		width: 20rem;
+		left: 30%;
+		top: -15%;
+		overflow: auto !important;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		animation-name: animatetop;
+		animation-duration: 0.8s;
+	}
+	.modal .modal-content .headerModal {
+		display: flex;
+		justify-content: space-around;
+	}
+	.modal .modal-content .bodyCart {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		background-color: #eeeeee;
+		border: 2px solid #403f3d;
+		border-radius: 0.5rem;
+		margin: 0.5rem 1rem;
+		padding: 1.5rem;
+	}
+	.modal .modal-content .bodyCart .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 16rem;
+	}
+	.modal .modal-content .bodyCart .container .imgCart {
+		width: 6rem;
+		border-radius: 0.5rem;
+		padding: 0.2rem;
+		margin-right: 0.2rem;
+	}
+	.modal .modal-content .bodyCart .container .textContainer {
+		height: 5rem;
+	}
+	.modal .modal-content .bodyCart .container .textContainer p {
+		padding: 0;
+		margin: 0;
+	}
+	.modal .modal-content .close {
+		color: #ff8303;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.modal .modal-content .close:hover,
+	.modal .modal-content .close:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.modal .modal-content .footerModal {
+		text-decoration: none;
+		background-color: #ff8303;
+		text-align: center;
+		font-weight: bold;
+		padding: 0.5rem 0;
+	}
+	.modal .modal-content .footerModal a {
+		color: #eeeeee;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.containerProduct {
+		margin: 1rem !important;
+		padding: 1rem;
+	}
+	.containerProduct section .containerSection {
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+	.containerProduct section .containerSection .imagenProduct {
+		width: 20rem;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom {
+		background-position: 50% 50%;
+		position: relative;
+		border: 5px solid #f0e3ca;
+		width: 20rem;
+		border-radius: 1rem;
+		overflow: hidden;
+		cursor: zoom-in;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom img {
+		transition: opacity 0.5s;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.containerProduct section .containerSection .imagenProduct figure.zoom img:hover {
+		opacity: 0;
+	}
+	.containerProduct section .containerSection .imagenProduct .imagenesAll .imagenesExtra {
+		width: 5rem;
+		border-radius: 0.5rem;
+		border: 2px solid #f0e3ca;
+	}
+	.containerProduct section .containerSection .contenedor {
+		display: block;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .contenedor h1 {
+		font-size: 22px;
+		width: 20rem;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .contenedor p {
+		width: 20rem;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .contenedor .precio {
+		font-size: 40px;
+		width: 20rem;
+		margin: auto;
+	}
+	.containerProduct section .containerSection .contenedor .talles {
+		font-size: 10px;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	.containerProduct section .containerSection .contenedor .talles .talle {
+		width: 60px;
+	}
+	.containerProduct section .containerSection .contenedor .containerAddCart {
+		margin: auto;
+		justify-content: center;
+	}
+	.containerProduct section section .accordion .accordion-item .accordion-collapse .accordion-body .listasDesc {
+		display: grid;
+		margin: auto;
+	}
+	.containerProduct section section .accordion .accordion-item .accordion-collapse .accordion-body .listasDesc .listDesc {
+		display: grid;
+		margin: auto;
+	}
+}

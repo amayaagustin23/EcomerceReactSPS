@@ -1,0 +1,319 @@
+
+.containerHome .imagenPrincipal {
+	width: 100%;
+	height: 750px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(transparent, #403f3d 90%), url("https://todosobrecamisetas.com/wp-content/uploads/fc-barcelona-2022-23-nike-home-kit-h.jpg");
+}
+
+.containerHome .listarImagenes {
+	margin-top: -50px;
+	display: flex;
+	padding: 10px 0;
+	overflow: auto;
+}
+.containerHome .listarImagenes::-webkit-scrollbar {
+	width: 2px;
+	height: 8px;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-thumb {
+	background: rgba(255, 68, 0, 0.066);
+	border-radius: 10px;
+	background-clip: padding-box;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-thumb:hover {
+	border: 0;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-track {
+	background: transparent;
+}
+.containerHome .listarImagenes .containerItem {
+	position: relative;
+	width: 200px;
+	height: 120px;
+	margin-inline: 10px;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.containerHome .listarImagenes .containerItem .image {
+	display: block;
+	width: 200px;
+	height: 120px;
+	border-radius: 1rem;
+}
+.containerHome .listarImagenes .containerItem .image:hover {
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+.containerHome .listarImagenes .containerItem .overlay {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #1b1a17;
+	border-radius: 1rem;
+	font-weight: bold;
+}
+.containerHome .listarImagenes .containerItem .overlay .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.containerHome .listarImagenes .containerItem:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+	text-decoration: none;
+}
+.containerHome .listarImagenes .containerItem:hover .overlay {
+	opacity: 0.85;
+}
+.containerHome .listarImagenes::-webkit-scrollbar {
+	width: 2px;
+	height: 8px;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-thumb {
+	background: rgba(33, 33, 33, 0.066);
+	border-radius: 10px;
+	background-clip: padding-box;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-thumb:hover {
+	border: 0;
+}
+.containerHome .listarImagenes::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.containerHome .bestSeller {
+	background-color: #1b1a17;
+	margin: auto;
+	text-align: center;
+	padding: 2rem 0;
+}
+.containerHome .bestSeller h2 {
+	color: #eeeeee;
+}
+.containerHome .bestSeller .containerBestSeller {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 400px);
+	grid-gap: 1rem;
+	justify-content: center;
+}
+.containerHome .bestSeller .containerBestSeller .article {
+	margin: 1rem auto;
+	padding: 20px;
+	background-color: #eeeeee;
+	border-radius: 0.5rem;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	position: relative;
+}
+.containerHome .bestSeller .containerBestSeller .article:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.containerHome .bestSeller .containerBestSeller .article img {
+	width: 280px;
+	border-radius: 0.5rem;
+	background-color: white;
+}
+.containerHome .bestSeller .containerBestSeller .article .textArticle p {
+	font-size: 24px;
+	font-weight: bold;
+}
+.containerHome .bestSeller .containerBestSeller .article .overlay {
+	object-fit: cover;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	right: 10px;
+	width: 94%;
+	height: 15%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #1b1a17;
+	border-radius: 1rem;
+	font-weight: bold;
+}
+.containerHome .bestSeller .containerBestSeller .article .overlay .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.containerHome .bestSeller .containerBestSeller .article .overlay .text a {
+	text-decoration: none;
+	color: #eeeeee;
+	cursor: pointer;
+}
+.containerHome .bestSeller .containerBestSeller .article:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	height: 450px;
+}
+.containerHome .bestSeller .containerBestSeller .article:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.containerHome .containerVideos {
+	margin: auto;
+	background-color: #eeeeee;
+	padding: 1rem 0;
+}
+.containerHome .containerVideos h2 {
+	color: #1b1a17;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.containerHome .containerVideos .videos {
+	display: grid;
+}
+.containerHome .containerVideos .videos .video {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0.5rem 0;
+	align-items: center;
+}
+.containerHome .containerVideos .videos .video iframe {
+	width: 400px;
+	height: 200px;
+	border-radius: 0.5rem;
+}
+.containerHome .containerVideos .videos .video .description {
+	color: #1b1a17;
+	width: 400px;
+}
+
+@media screen and (max-width: 576px) {
+	.containerHome .imagenPrincipal {
+		width: 100%;
+		height: 280px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: linear-gradient(transparent, #403f3d 80%), url("https://todosobrecamisetas.com/wp-content/uploads/fc-barcelona-2022-23-nike-home-kit-h.jpg");
+	}
+	.containerHome .listarImagenes {
+		padding: 5px 0;
+	}
+	.containerHome .listarImagenes .containerItem {
+		width: 150px;
+		height: 100px;
+	}
+	.containerHome .listarImagenes .containerItem .image {
+		width: 150px;
+		height: 100px;
+	}
+	.containerHome .listarImagenes .containerItem .overlay .text {
+		font-size: 14px;
+	}
+	.containerHome .bestSeller {
+		background-color: #1b1a17;
+		margin: auto;
+		text-align: center;
+		padding: 2rem 0;
+	}
+	.containerHome .bestSeller h2 {
+		color: #eeeeee;
+	}
+	.containerHome .bestSeller .containerBestSeller {
+		grid-template-columns: repeat(auto-fill, 10rem);
+	}
+	.containerHome .bestSeller .containerBestSeller .article {
+		padding: 0.5rem;
+		height: 16rem;
+	}
+	.containerHome .bestSeller .containerBestSeller .article:hover {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	.containerHome .bestSeller .containerBestSeller .article img {
+		width: 9rem;
+		border-radius: 0.5rem;
+		background-color: white;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .textArticle {
+		width: 9rem;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .textArticle h3 {
+		font-size: 20px;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .textArticle p {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .overlay {
+		object-fit: cover;
+		position: absolute;
+		bottom: 0.5rem;
+		width: 90%;
+		height: 12%;
+		left: 0.5rem;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .overlay .text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.containerHome .bestSeller .containerBestSeller .article .overlay .text a {
+		text-decoration: none;
+		color: #eeeeee;
+		cursor: pointer;
+	}
+	.containerHome .bestSeller .containerBestSeller .article:hover {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		height: 18rem;
+	}
+	.containerHome .bestSeller .containerBestSeller .article:hover .overlay {
+		opacity: 1;
+		cursor: pointer;
+	}
+	.containerHome .containerVideos h2 {
+		color: #1b1a17;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.containerHome .containerVideos .videos .video iframe {
+		width: 300px;
+		height: 180px;
+	}
+	.containerHome .containerVideos .videos .video .description {
+		color: #1b1a17;
+		width: 280px;
+	}
+	.containerHome .containerVideos .videos .video .description h3 {
+		font-size: 20px;
+		text-align: center;
+	}
+	.containerHome .containerVideos .videos .video .description p {
+		font-size: 14px;
+	}
+}
